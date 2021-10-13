@@ -1,0 +1,9 @@
+.*
+!.gitignore
+!.clang-format
+*.o
+*.so
+b.log
+binder_server
+binder_client
+

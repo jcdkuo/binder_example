@@ -9,27 +9,28 @@ The links are as follows.
 * [Using Android IPC binders from native code](https://ebixio.com/blog/2012/07/07/using-android-ipc-binders-from-native-code/)
 
 # How to build
-## step 1
+## Step 1
 `git clone https://github.com/jcdkuo/binder_example.git` to android/externel folder
 
-## step 2
+## Step 2
 Go to your android root folder, then run
 ```
 source build/envsetup.sh
 ```
 
-## step 3
+## Step 3
 ```
 lunch ${PRODUCT_NAME}
+```
 
-## step 4
+## Step 4
 Go to binder example folder (binder_demo_server/binder_demo_client), and run
 ```
 make clean
 make
 ```
 
-## step 5
-push exec file to rootfs "system"bin" folder, then you can exec it.
+## Step 5
+push exec file to rootfs `system/bin` folder, then you can exec it.
 
 use `logcat | grep "binder" ` to see the log
